@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DuckHibernate:jar">
+    <output-path>$PROJECT_DIR$/../Servers/1.8_Server/plugins</output-path>
+    <root id="archive" name="DuckHibernate.jar">
+      <element id="module-output" name="DuckHibernate" />
+    </root>
+  </artifact>
+</component>
