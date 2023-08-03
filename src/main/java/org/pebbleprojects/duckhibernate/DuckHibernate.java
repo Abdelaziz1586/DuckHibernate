@@ -41,7 +41,7 @@ public final class DuckHibernate extends JavaPlugin {
                 }
 
                 try {
-                    Thread.sleep(5000L);
+                    Thread.sleep(1000L);
 
                     int u = 0;
 
@@ -52,9 +52,7 @@ public final class DuckHibernate extends JavaPlugin {
                         int l = (c = w.next().getLoadedChunks()).length;
 
                         for(int i = 0; i < l; ++i) {
-                            try {
-                               if (c[l].unload(true)) u++;
-                            } catch (final IndexOutOfBoundsException ignored) {}
+                            if (c[i].unload(true)) u++;
                         }
                     }
 
