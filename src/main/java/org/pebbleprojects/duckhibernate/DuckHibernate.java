@@ -10,10 +10,7 @@ public final class DuckHibernate extends JavaPlugin {
     private boolean b = false;
 
     public void onDisable() {
-        try {
-            Bukkit.getScheduler().cancelTasks(this);
-        } catch (Throwable ignored) {
-        }
+        getServer().shutdown();
     }
 
     public void onEnable() {
